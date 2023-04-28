@@ -1,17 +1,25 @@
 {
-  "name": "npm-github-demo",
-  "version": "1.0.0",
+  "name": "@saitobp/npm-github-demo",
+  "version": "1.0.1",
   "author": "Gabriel B. P. Saito",
   "description": "A simple demo of how to publish a package to npm and GitHub",
   "type": "module",
   "main": "index.js",
-  "bin": "index.js",
+  "bin": "./index.js",
   "license": "MIT",
+  "files": [
+    "dist/**",
+    "index.js"
+  ],
   "scripts": {
     "build": "unbuild"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/SaitoBP/npm-github-demo.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
     "chalk": "^5.2.0",
